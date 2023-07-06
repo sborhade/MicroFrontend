@@ -34,11 +34,10 @@ Loading remote modules is an asynchronous activity.
 ![image](https://github.com/sborhade/microfrontend/assets/19749006/eae09d88-907d-4299-a6c4-18fa743d3d7d)
 
 
+when using shareAll in webpack.config.js with the following options:
 
-
-
-
-
-
-
+singleton: true: Only one instance of the shared package is used across all applications in the federation.
+strictVersion: true: All applications must use the exact same version of the shared package.
+requiredVersion: "auto": The version of the shared package is automatically resolved based on the consuming application's package.json.
+These options ensure that all dependencies of an application are shared, maintain a single instance of the package, enforce consistent versioning across applications, and automatically select the required version based on the consuming application's package.json.
 
