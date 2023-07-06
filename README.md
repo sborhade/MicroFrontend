@@ -1,6 +1,17 @@
 # Micro-Frontend
 This is a POC for MicroFrontend architecture.
 
+Demo URLs
+
+Host/Shell: https://mfshell.web.app/
+
+mf-shopping: https://mfshopping.web.app/
+
+mf-products: https://products-app-remote.web.app
+
+mf-payment: https://mfpayment.web.app
+
+
 **Angular Micro Frontend** is an architectural pattern. 
 It breaks the large Angular web application into small, independent, and deployable micro-applications.
 Every micro-application has responsibilities for handling its own set of features. 
@@ -60,3 +71,6 @@ These options ensure that all dependencies of an application are shared, maintai
 **Independent Deployment**: Each microfrontend is independently built and deployed. The built artifacts of each microfrontend, including the shared modules and components, are hosted and served separately.
 
 By utilizing Angular Federation with Webpack in a microfrontend architecture, you can develop and deploy a collection of independent Angular applications that seamlessly work together to create a cohesive user experience. The sharing of code and resources between microfrontends enables efficient development, code reuse, and scalability.
+
+
+
