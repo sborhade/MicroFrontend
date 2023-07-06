@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "site": "products-app-remote",
+    "public":"dist/mf-products",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "us-central1"
+    }
+  }
+}

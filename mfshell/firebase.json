@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "site": "mfshell",
+    "public":"dist/mfshell",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "us-central1"
+    }
+  }
+}
