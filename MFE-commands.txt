@@ -1,0 +1,109 @@
+mkdir mfe
+cd .\mfe\
+cls
+ng new mfshell
+ng new mf-shopping
+ng new mf-payment
+ng add @angular-federation --project mfshell --port 4200 --type host
+ng add @angular-architets\module-federation --project mfshell --port 4200 --type host
+cd .\mfshell\
+ng add @angular-architets\module-federation --project mfshell --port 4200 --type host
+npm install @angular-architects\module-federation
+ng add @angular-architets\module-federation --project mfshell --port 4200 --type host
+ng add @angular-architects/module-federation --project mfshell --port 4200 --type host
+cd..
+cls
+cd mfe 
+ng add @angular-architects/module-federation --project mf-payment --port 4201 --type host
+cd .\mf-payment\
+ng add @angular-architects/module-federation --project mf-payment --port 4201 --type host
+cd..
+cd .\mf-shopping\
+ng add @angular-architects/module-federation --project mf-shopping --port 4202 --type host
+ng add @angular-architects/module-federation --project mf-shopping --port 4202 --type remote
+cd..
+cd .\mf-payment\
+ng add @angular-architects/module-federation --project mf-payment --port 4201 --type remote
+cls
+ng add @angular-architects/module-federation --project mf-payment --port 4201 --type remote
+npm install
+cls
+npm start
+cd..
+cd .\mfshell\
+npm start
+cd .\mf-payment\
+cls
+ng g c payment --standalone
+npm start
+cd .\mf-shopping\
+npm start
+cd .\mf-payment\
+npm start
+cd .\mf-shopping\
+ng g m shopping-cart
+ng g c shopping-cart
+cd .\app\
+cls
+ng g c shopping-cart
+cd .\mfe1\
+cls
+npm start
+npm install
+npm start
+npm install
+npm start
+cd .\mf-payment\
+cls
+npm install
+npm start
+cd .\mf-shopping\
+cls
+ng add module shopping-cart
+cls
+ng g module shopping-cart
+ng g module shopping-cart --route shopping --module app.module
+npm install
+npm start
+ng new products-app-remote --create-application false --skip-tests
+cd .\products-app-remote\
+cls
+ng g app mf-products --skip-tests --routing
+ng g c components\home --project mf-products
+ng g c home --project mf-products
+ng g module --project mf-products --routing product
+ng g module --project mf-products --routing home
+npm install bootstrap@5.2.2 jquery --save
+cd..
+cd .\mf-payment\
+cd..
+cd .\products-app-remote\
+cls
+npm start
+cd ..
+cd .\products-app-remote\
+cls
+ng add @angular-architects/module-federation --type remote --project mf-products --port 4203
+cls
+cd .\mfshell\
+cls
+npm start
+npm start
+cd .\projects\
+cd .\microfront-shell\
+npm start
+npm install
+npm start
+npm start microfront-payment
+npm start microfront-shell
+cd .\projects\
+npm start .\microfront-shopping\
+npm start microfront-shopping
+cd .\mfshell\
+npm start
+cd .\products-app-remote\
+npm start
+cd .\mfshell\
+npm start
+cd .\mf-payment\
+npm start
