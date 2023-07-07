@@ -107,3 +107,10 @@ cd .\mfshell\
 npm start
 cd .\mf-payment\
 npm start
+
+
+
+firebase init hosting
+ng build --aot
+firebase deploy --only hosting:mfshell
+
