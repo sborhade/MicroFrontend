@@ -5,12 +5,12 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 const routes: Routes = [
   {
     path: 'products',
-    loadChildren: () => import('mfproducts/Module').then((m)=>m.HomeModule),
-  },                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    loadChildren: () => import('mfproducts/Module').then((m) => m.HomeModule),
+  },
   {
     path: 'payment',
-    loadComponent: () => import('mfpayment/PaymentComponent').then((m)=>m.PaymentComponent),
-  },                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    loadComponent: () => import('mfpayment/PaymentComponent').then((m) => m.PaymentComponent),
+  },
   {
     path: 'bookings',
     loadChildren: () =>
@@ -23,8 +23,8 @@ const routes: Routes = [
   {
     path: 'shopping',
     loadChildren: () => loadRemoteModule({
-      type: 'module',
-      remoteEntry: 'http://localhost:4202/remoteEntry.js',
+      type: 'manifest',
+      remoteName: 'mfshopping',
       exposedModule: './ShoppingCartModule'
     })
       .then((m) => m.ShoppingCartModule)

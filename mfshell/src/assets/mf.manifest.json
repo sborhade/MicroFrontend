@@ -1,5 +1,5 @@
 {
-  "mfproducts": "http://localhost:4203/remoteEntry.js",
-  "mfshopping": "http://localhost:4202/remoteEntry.js",
-  "mfpayment": "http://localhost:4201/remoteEntry.js"
+  "mfproducts": "https://products-app-remote.web.app/remoteEntry.js",
+  "mfshopping": "https://mfshopping.web.app/remoteEntry.js",
+  "mfpayment": "https://mfpayment.web.app/remoteEntry.js"
 }

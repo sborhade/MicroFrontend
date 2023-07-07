@@ -5,9 +5,8 @@ const {
 
 module.exports = withModuleFederationPlugin({
   remotes: {
-    mfproducts: "http://localhost:4203/remoteEntry.js", //4203
-    mfshopping: "http://localhost:4202/remoteEntry.js", //4202
-    mfpayment: "http://localhost:4201/remoteEntry.js", //4201
+    mfproducts: "https://products-app-remote.web.app/remoteEntry.js", //4203
+    mfpayment: "https://mfpayment.web.app/remoteEntry.js", //4201
   },
 
   shared: {
